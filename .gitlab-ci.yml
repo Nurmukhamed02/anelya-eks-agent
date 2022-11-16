@@ -1,0 +1,11 @@
+stages:
+  - validate
+  - test
+  - build
+  - deploy
+  - cleanup
+
+
+include:
+  - local: .gitlab/pipeline/terraform.yml
+  # - local: .gitlab/pipeline/gitlab-agent.yml
